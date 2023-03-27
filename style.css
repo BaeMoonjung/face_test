@@ -10,7 +10,7 @@ body {
       height: 100px;
       margin: 10px auto 0px;
       line-height: 100px;
-      background-color: lightgreen;
+      /* background-color: lightgreen; */
   }
   footer{
       font-size: 30px;
@@ -126,7 +126,7 @@ body {
           
       }
   
-  /* 모바일 반응형 */
+  /* 모바일 반응형
   
   @media screen and (max-width:767px) {
   body {
@@ -257,4 +257,4 @@ body {
       border-style: dashed;
       border-width: thin;
       }
-  }
+  } */
