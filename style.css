@@ -32,6 +32,8 @@ body {
   
   .file-upload-content {
     display: none;
+    height: 100%;
+    background-color: antiquewhite;
     text-align: center;
   }
   
@@ -61,6 +63,7 @@ body {
   
   .image-title-wrap {
     padding: 0 15px 15px 15px;
+    height: auto;
     color: #222;
   }
   
@@ -107,23 +110,41 @@ body {
     transition: all .2s ease;
   }
   #label-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      background-color: lightgreen;
       padding: 20px 20px;
-      border-style: dashed;
-      border-width: thin;
+      height: 15%;
+      /* border-style: dashed;
+      border-width: thin; */
   }
   
   #add_message{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding: 20px 20px;
       margin: 0px 0px 25px;
-      border-style: dashed;
-      border-width: thin;
+      height: 15%;
+      /* border-style: dashed;
+      border-width: thin; */
+      text-align: left;
+      background-color: beige;
   }
   .result-message{
+      display: flex;
+      flex-direction: column;
       padding: 20px 20px;
       margin: 0px 0px;
-      border-style: dashed;
-      border-width: thin;
-          
+      height: 30%;
+      /* border-style: dashed;
+      border-width: thin; */
+      justify-content: center;
+      text-align: left;
+      background-color: beige;
+  }
       }
   
   /* 모바일 반응형
