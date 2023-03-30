@@ -1,49 +1,40 @@
-  html{
-    height: 100%;
-  }
   body {
-    height: 100%;
-    font-family: sans-serif;
-    background-color: #eeeeee;
+    font-family: 'Jua', 'sans-serif';
+    font-weight: bold;
+    background-color: white;
+    padding: 20px;
   }
-  
   header{
-      font-size: 30px;
+      font-size: 2rem;
       text-align: center;
-      width: 600px;
-      height: 10%;
-      /* height: 100px; */
-      margin: 10px auto 0px;
+      margin: 0px auto 0px;
       line-height: 100px;
-      /* background-color: lightgreen; */
   }
   footer{
-      font-size: 30px;
+      font-size: 2rem;
       text-align: center;
-      width: 600px;
-      height: 5%;
-      /* height: 50px; */
-      margin: 0 auto 10px;
+      padding: 10px;
+      margin: 0 auto 0px;
       line-height: 100px;
   }
-  
   .file-upload {
     background-color: #ffffff;
-    width: 600px; 
-    height:85%;
-    /* height: calc(100vh - 150px); */
     margin: 0 auto;
-    padding: 20px;
-      
+    /* padding: 20px;    */
   }
-  
+  .image-upload-wrap {
+    border: 4px dashed blue;
+    position: relative;
+    margin: 0, auto;
+  }
   .file-upload-content {
+    font-size: 1.5rem;
+    color: black;
     display: none;
     height: 100%;
-    background-color: black;
+    background-color: #f6f7fa;
     text-align: center;
   }
-  
   .file-upload-input {
     position: absolute;
     margin: 0;
@@ -54,35 +45,21 @@
     opacity: 0;
     cursor: pointer;
   }
-  
-  .image-upload-wrap {
-    border: 4px dashed blue;
-    position: relative;
-    top: calc((100vh - 200px - 170px)/2);
-  }
-  
   .image-dropping,
   .image-upload-wrap:hover {
     background-color: blue;
     border: 4px dashed #ffffff;
     color:white;
   }
-  
-  
-  
   .drag-text {
     text-align: center;
   }
-  
   .drag-text h3 {
     font-weight: 100;
     text-transform: uppercase;
     color: red;
     padding: 60px 0;
   }
-  
-  
-  
   .remove-image {
     width: 200px;
     margin: 0;
@@ -108,47 +85,35 @@
     transition: all .2s ease;
   }
   #label-container{
-      color: white;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      text-align: left;
-      /* background-color: lightgreen; */
+      justify-content: space-around;
+      text-align: center;
       padding: 20px 20px;
-      height: 20%;
-      /* border-style: dashed;
-      border-width: thin; */
   }
-  
   #add_message{
+      font-size: 1rem;
+      font-weight: normal;
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 20px 20px;
-      margin: 0px 0px 25px;
-      height: 10%;
-      /* border-style: dashed;
-      border-width: thin; */
-      text-align: left;
-      background-color: white;
+      margin: 0px;
+      text-align: center;
   }
   .result-message{
       display: flex;
       flex-direction: column;
       padding: 20px 20px;
       margin: 0px 0px;
-      height: 30%;
-      /* border-style: dashed;
-      border-width: thin; */
       justify-content: center;
-      text-align: left;
-      background-color: white;
+      text-align: center;
   }
   .file-upload-image {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 40%;
+    max-width: 40%;
     margin: auto;
-    padding: 20px;
+    padding: 40px 20px 20px;
   }
   .image-title-wrap {
     padding: 15px 15px 15px 15px;
