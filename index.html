@@ -30,8 +30,10 @@
             <div class="file-upload-content">
                 <img class="file-upload-image" id="face-image" src="#" alt="your image" />
                 <p class="result-message"></p>
+                <p class="result-Explain"></p>
+                <p class="result-Example"></p>
                 <!-- <div id="label-container"></div> -->
-                <P id="add_message">본 어플은 재미용으로 제작한 것입니다<br>여자 연애인이 미남형으로 나오는 경우도 있으니<br>재미로만 봐주세요. </P>  
+                <P id="add_message">본 어플은 재미용으로 제작한 것입니다. 여자 연애인이 미남형으로 나오는 경우도 있으니 재미로만 봐주세요. </P>  
                 <div class="image-title-wrap">
                     <button type="button" onclick="removeUpload()" class="remove-image">
                         다시하기
@@ -99,19 +101,29 @@
                 var resultMessege;
                 switch (prediction[0].className) {
                     case '남방계 미남형':
-                        resultMessege = `당신은 남방계 미남 얼굴형입니다(${percent}%).<br>남방계 미남 연예인으로는<br>장동건, 원빈, 오지호, 민호(샤이니), 고수가 있습니다.`;
+                        resultMessege = `남방계 미남 얼굴형(${percent}%)!`;
+                        resultExplain = "남방계 미남 연예인"
+                        resultExample = "장동건, 원빈, 오지호, 민호(샤이니), 고수"
                         break;
                     case '북방계 미남형':
-                        resultMessege = `당신은 북방계 미남 얼굴형입니다(${percent}%).<br>북방계 미남 연예인으로는<br>강동원, 이준기, 장우혁, 소지섭, 이정재가 있습니다.`;
+                        resultMessege = `북방계 미남 얼굴형(${percent}%)!`;
+                        resultExplain = "북방계 미남 연예인"
+                        resultExample = "강동원, 이준기, 장우혁, 소지섭, 이정재"
                         break;
                     case '남방계 미녀형':
-                        resultMessege = `당신은 남방계 미녀 얼굴형입니다(${percent}%).<br>남방계 미녀 연예인으로는<br>송혜교, 김혜수, 이효리, 김유정, 김옥빈이 있습니다.`;
+                        resultMessege = `남방계 미녀 얼굴형(${percent}%)!`;
+                        resultExplain = "남방계 미녀 연예인:"
+                        resultExample = "송혜교, 김혜수, 이효리, 김유정, 김옥빈."
                         break;
                     case '북방계 미녀형':
-                        resultMessege = `당신은 북방계 미녀 얼굴형입니다(${percent}%).<br>북방계 미녀 연예인으로는<br>김연아, 전지현, 이영애, 박소담, 김고은이 있습니다.`;
+                        resultMessege = `북방계 미녀 얼굴형(${percent}%)!`;
+                        resultExplain = "북방계 미녀 연예인"
+                        resultExample = "김연아, 전지현, 이영애, 박소담, 김고은."
                         break;
                 }
                 $('.result-message').html(resultMessege);
+                $('.result-Explain').html(resultExplain);
+                $('.result-Example').html(resultExample);
                 // for (let i = 0; i < maxPredictions; i++) {
                 //     const classPrediction =
                 //         prediction[i].className + ': ' + prediction[i].probability.toFixed(2) * 100 + '%';
