@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>남방계 북방계 얼굴상 테스트</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -44,6 +45,12 @@
                     </button>
                 </div>
             </div>
+        </div>
+        <div class= "explain">
+            <div class="north">북방계 얼굴형: </div>
+            <div class="northexplain">눈썹이 흐리고, 코는 길지만 끝이 뾰족하며, 쌍꺼풀이 없고, 눈이 작으며, 입술이 얇음.</div>
+            <div class="south">남방계 얼굴형: </div>
+            <div class="southexplain">진한 눈썹, 쌍꺼풀, 짧은 코와 큰 콧망울, 두터운 입술, 많은 수염, 네모난 얼굴, 굵은 머리카락, 검은 피부.</div>    
         </div>
         <footer>  </footer>
         <script
@@ -142,6 +149,7 @@
 
                     reader.onload = function (e) {
                         $('.image-upload-wrap').hide();
+                        $('.explain').hide();
 
                         $('.file-upload-image').attr('src', e.target.result);
                         // $('.file-upload-content').show();
@@ -164,6 +172,7 @@
                 $('.file-upload-input').replaceWith($('.file-upload-input').clone());
                 $('.file-upload-content').hide();
                 $('.image-upload-wrap').show();
+                $('.explain').show();
             }
             $('.image-upload-wrap').bind('dragover', function () {
                 $('.image-upload-wrap').addClass('image-dropping');

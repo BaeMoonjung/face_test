@@ -10,6 +10,24 @@
       margin: 0px auto 0px;
       line-height: 100px;
   }
+  .explain{
+    font-weight: normal;
+    padding: 20px 0px;
+  }
+  .north{
+    font-weight: bold;
+  }
+  .south{
+    font-weight: bold;
+  }
+  .northexplain{
+    padding: 10px 0;
+    font-size: 0.8rem;
+  }
+  .southexplain{
+    padding: 10px 0;
+    font-size: 0.8rem;
+  }
   footer{
       font-size: 2rem;
       text-align: center;
