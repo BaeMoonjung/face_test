@@ -34,7 +34,7 @@
             </div>
             <div class="file-upload-content">
                 <img class="file-upload-image" id="face-image" src="#" alt="your image" />
-                <p id = "loading"> AI 가 당싱의 얼굴상을 분석 중입니다. </p>
+                <p id = "loading"> AI 가 당신의 얼굴상을 분석 중입니다. </p>
                 <p class="result-message"></p>
                 <p class="result-Explain"></p>
                 <p class="result-Example"></p>
@@ -155,10 +155,10 @@
                     reader.onload = function (e) {
                         $('.image-upload-wrap').hide();
                         $('.explain').hide();
-
-                        $('.file-upload-image').attr('src', e.target.result);
-                        // $('.file-upload-content').show();
                         $('#loading').show;
+                        $('.file-upload-image').attr('src', e.target.result);
+                        $('.file-upload-content').show();
+                        
 
                         $('.image-title').html(input.files[0].name);
                     };
@@ -168,7 +168,7 @@
                         console.log('hello');
                         predict();
                         $('#loading').hide;
-                        $('.file-upload-content').show();
+                        // $('.file-upload-content').show();
                     });
                 } else {
                     removeUpload();
