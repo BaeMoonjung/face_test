@@ -157,7 +157,7 @@
                         $('.explain').hide();
                         $('#loading').show;
                         $('.file-upload-image').attr('src', e.target.result);
-                        $('.file-upload-content').show();
+                        // $('.file-upload-content').show();
                         
 
                         $('.image-title').html(input.files[0].name);
@@ -168,7 +168,7 @@
                         console.log('hello');
                         predict();
                         $('#loading').hide;
-                        // $('.file-upload-content').show();
+                        $('.file-upload-content').show();
                     });
                 } else {
                     removeUpload();
