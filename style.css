@@ -45,6 +45,9 @@
     position: relative;
     margin: auto 5%;
   }
+  #loading{
+    display: none;
+  }
   .file-upload-content {
     font-size: 1.5rem;
     color: black;
