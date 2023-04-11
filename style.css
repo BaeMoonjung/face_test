@@ -16,6 +16,8 @@
   }
   .loading{
     display: none;
+    text-align: center;
+    padding: 10px;
   }
   .north{
     font-weight: bold;
