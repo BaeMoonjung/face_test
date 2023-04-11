@@ -14,6 +14,9 @@
     padding: 20px 0px;
     margin: auto 5%;
   }
+  .loading{
+    display: none;
+  }
   .north{
     font-weight: bold;
   }
