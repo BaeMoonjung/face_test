@@ -18,46 +18,48 @@
     </head>
 
     <body>
-        <header>남방계 북방계 얼굴형 테스트</header>
-        <div class="file-upload">
-            <div class="image-upload-wrap">
-                <input
-                    class="file-upload-input"
-                    type="file"
-                    onchange="readURL(this);"
-                    accept="*"
-                    multiple
-                />
-                <div class="drag-text">
-                    <h3>위 상자를 클릭하여<br>얼굴 사진을 올려 보세요.</h3>
+        <div class="total-container">
+            <header>남방계 북방계 얼굴형 테스트</header>
+            <div class="file-upload">
+                <div class="image-upload-wrap">
+                    <input
+                        class="file-upload-input"
+                        type="file"
+                        onchange="readURL(this);"
+                        accept="*"
+                        multiple
+                    />
+                    <div class="drag-text">
+                        <h3>위 상자를 클릭하여<br>얼굴 사진을 올려 보세요.</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="loading"> 데이터 분석 중입니다.</div>
-            <div class="file-upload-content">
-                <img class="file-upload-image" id="face-image" src="#" alt="your image" />   
-                <p class="result-message"></p>
-                <p class="result-Explain"></p>
-                <p class="result-Example"></p>
+                <div class="loading"> 데이터 분석 중입니다.</div>
+                <div class="file-upload-content">
+                    <img class="file-upload-image" id="face-image" src="#" alt="your image" />   
+                    <p class="result-message"></p>
+                    <p class="result-Explain"></p>
+                    <p class="result-Example"></p>
+                    
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_inline_share_toolbox"></div>
                 
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_inline_share_toolbox"></div>
-            
-                <!-- <div id="label-container"></div> -->
-                <P id="add_message">본 어플은 재미용으로 제작한 것입니다. 여자 연애인이 미남형으로 나오는 경우도 있으니 재미로만 봐주세요. </P>  
-                <div class="image-title-wrap">
-                    <button type="button" onclick="removeUpload()" class="remove-image">
-                        다시하기
-                    </button>
+                    <!-- <div id="label-container"></div> -->
+                    <P id="add_message">본 어플은 재미용으로 제작한 것입니다. 여자 연애인이 미남형으로 나오는 경우도 있으니 재미로만 봐주세요. </P>  
+                    <div class="image-title-wrap">
+                        <button type="button" onclick="removeUpload()" class="remove-image">
+                            다시하기
+                        </button>
+                    </div>
                 </div>
             </div>
+            <div class= "explain">
+                <div class="north">북방계 얼굴형: </div>
+                <div class="northexplain">눈썹이 흐리고, 코는 길지만 끝이 뾰족하며, 쌍꺼풀이 없고, 눈이 작으며, 입술이 얇음.</div>
+                <div class="south">남방계 얼굴형: </div>
+                <div class="southexplain">진한 눈썹, 쌍꺼풀, 짧은 코와 큰 콧망울, 두터운 입술, 많은 수염, 네모난 얼굴, 굵은 머리카락, 검은 피부.</div>    
+            </div>
+            <footer>  </footer>
         </div>
-        <div class= "explain">
-            <div class="north">북방계 얼굴형: </div>
-            <div class="northexplain">눈썹이 흐리고, 코는 길지만 끝이 뾰족하며, 쌍꺼풀이 없고, 눈이 작으며, 입술이 얇음.</div>
-            <div class="south">남방계 얼굴형: </div>
-            <div class="southexplain">진한 눈썹, 쌍꺼풀, 짧은 코와 큰 콧망울, 두터운 입술, 많은 수염, 네모난 얼굴, 굵은 머리카락, 검은 피부.</div>    
-        </div>
-        <footer>  </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
             integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

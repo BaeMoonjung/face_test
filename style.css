@@ -3,6 +3,15 @@
     font-weight: bold;
     background-color: white;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .total-container{
+    width: 80%;
+    max-width: 600px;
+    min-width: 360px;
   }
   header{
       font-size: 1.8rem;
